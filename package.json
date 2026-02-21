@@ -1,0 +1,22 @@
+{
+  "name": "solidclaw",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "solidclaw": "./bin/solidclaw"
+  },
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "start": "bun src/server.ts",
+    "dev:all": "sh -c 'bun --watch src/server.ts & bun --cwd web dev'",
+    "install:all": "sh -c 'bun install && (cd web && bun install)'",
+    "env": "bun src/cli.ts env",
+    "cli": "bun src/cli.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.36.4",
+    "hono": "^4.3.2",
+    "zod": "^3.23.8"
+  }
+}

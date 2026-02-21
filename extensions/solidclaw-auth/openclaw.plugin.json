@@ -1,0 +1,13 @@
+{
+  "id": "solidclaw-auth",
+  "providers": ["solidclaw"],
+  "skills": ["skills/solidclaw-primary"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "baseUrl": { "type": "string" },
+      "modelIds": { "type": "array", "items": { "type": "string" } }
+    }
+  }
+}
