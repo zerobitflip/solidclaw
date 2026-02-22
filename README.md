@@ -4,6 +4,8 @@ Solidclaw is a local credential broker + model proxy for OpenClaw.
 It keeps provider keys and tool secrets out of OpenClaw, while still enabling
 models, tools, and channels through scoped access tokens and env injection.
 
+![Screenshot](screenshot.png)
+
 ## Stack
 
 - API: Bun + Hono
